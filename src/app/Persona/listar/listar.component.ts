@@ -24,7 +24,6 @@ export class ListarComponent implements OnInit {
   }
 
   Borrar(persona: Persona): void {
-    this.service.deletePersona(persona).subscribe(data => this.personas = this.personas.filter(p => p !== persona));
-    alert('Persona eliminada');
+    this.service.deletePersona(persona).subscribe(data => this.personas = this.personas.filter(p => p.id !== persona.id));
   }
 }

@@ -1,8 +1,10 @@
 <div class="d-flex justify-content-center text-white bg-info">
   <h1>Bienvenidos a mi ABM</h1>
 </div>
-<div class="container m-3 d-flex justify-content-around">
-  <button (click)="Listar()" class="btn btn-primary">Listar</button>
-  <button (click)="Nuevo()" class="btn btn-success">Añadir</button>
+<div class="d-flex justify-content-center">
+  <div class="container d-flex justify-content-between m-3 w-25">
+    <button (click)="Listar()" class="btn btn-lg btn-primary m-3">Listar</button>
+    <button (click)="Nuevo()" class="btn btn-lg btn-success m-3">Añadir</button>
+  </div>
 </div>
 <router-outlet></router-outlet>

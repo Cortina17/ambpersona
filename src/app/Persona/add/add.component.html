@@ -1,1 +1,18 @@
-<p>add works!</p>
+<div class="container col m-6">
+  <div class="card-header">
+    <h3>Alta de una persona</h3>
+  </div>
+  <div class="card-body">
+    <form action="">
+      <div class="form-group">
+        <label for="">Nombre</label>
+        <input type="text" class="form-control" [(ngModel)]="modelPersona.nombre" name="nombre">
+      </div>
+      <div class="form-group">
+        <label for="">Apellidos</label>
+        <input type="text" class="form-control" [(ngModel)]="modelPersona.apellido" name="apellido">
+      </div>
+      <button class="btn btn-success m-1" (click)="Guardar(modelPersona)">Guardar</button>
+    </form>
+  </div>
+</div>

@@ -18,8 +18,8 @@
           <td>{{persona.nombre}}</td>
           <td>{{persona.apellido}}</td>
           <td class="d-flex justify-content-around">
-            <button class="btn btn-warning">Editar</button>
-            <button class="btn btn-danger">Borrar</button>
+            <button class="btn btn-warning" (click)="Editar(persona)">Editar</button>
+            <button class="btn btn-danger" (click)="Borrar(persona)">Borrar</button>
           </td>
         </tr>
       </tbody>
